@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.raquel500c.mysurveymap.ui.InsertFragment">
+
+    <!-- Etiqueta de la descripción -->
+    <TextView
+        android:id="@+id/descripcion_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/descripcion_label"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- Texto de la descripción -->
+    <EditText
+        android:id="@+id/descripcion_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/descripcion_label"
+        android:hint="@string/descripcion_input"
+        android:maxLength="120" />
+
+    <!-- Divisor -->
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/descripcion_input"
+        android:layout_marginTop="@dimen/margin_divider"
+        android:background="@color/divider_color" />
+
+    <!-- Etiqueta del nombre -->
+    <TextView
+        android:id="@+id/nombre_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/divider1"
+        android:paddingTop="@dimen/padding_top_form"
+        android:text="@string/nombre_label"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- Texto del nombre lugar -->
+    <EditText
+        android:id="@+id/nombre_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_input"
+        android:maxLength="120"
+        android:layout_below="@+id/nombre_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!-- Etiqueta de la categoría -->
+    <TextView
+        android:id="@+id/categoria_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_top_form"
+        android:text="@string/categoria_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/nombre_input"
+        android:layout_alignRight="@+id/descripcion_label"
+        android:layout_alignEnd="@+id/descripcion_label" />
+
+    <!-- Selección de la categoría -->
+    <Spinner
+        android:id="@+id/categoria_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/categoria"
+        android:layout_below="@+id/categoria_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/space"
+        android:theme="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="add"
+        android:layout_toLeftOf="@+id/space" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/categoria_spinner"
+        android:layout_alignTop="@+id/categoria_spinner"
+        android:layout_toLeftOf="@+id/valoracion_spinner"
+        android:layout_toStartOf="@+id/valoracion_spinner"
+        android:id="@+id/space"
+        android:backgroundTint="@color/divider_color" />
+    <!-- Etiqueta de la valoración -->
+    <TextView
+        android:id="@+id/valoracion_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_top_form"
+        android:text="@string/valoracion_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:singleLine="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_below="@+id/nombre_input"
+        android:layout_alignRight="@+id/nombre_input"
+        android:layout_alignEnd="@+id/nombre_input" />
+
+
+    <!-- Selección de valoración -->
+    <Spinner
+        android:id="@+id/valoracion_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/valoracion"
+
+        android:layout_below="@+id/valoracion_label"
+        android:layout_alignLeft="@+id/valoracion_label"
+        android:layout_alignStart="@+id/valoracion_label"
+        android:theme="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+        android:touchscreenBlocksFocus="false"
+        android:transitionGroup="false"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scrollIndicators="bottom"
+        android:backgroundTintMode="add" />
+
+
+
+
+</RelativeLayout>

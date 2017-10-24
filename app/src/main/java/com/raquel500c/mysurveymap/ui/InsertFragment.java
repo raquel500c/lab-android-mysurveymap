@@ -1,0 +1,88 @@
+package com.raquel500c.mysurveymap.ui;
+
+
+import android.content.ContentValues;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+import com.raquel500c.mysurveymap.R;
+import com.raquel500c.mysurveymap.miProviderBD.ContratoProvider;
+
+
+/**
+ * Fragmento con formulario de inserción
+ */
+public class InsertFragment extends Fragment {
+
+    /**
+     * Views del formulario
+     */
+    private EditText descripcion;
+    private EditText nombre;
+    private Spinner valoracion;
+    private Spinner categoria;
+
+
+    public InsertFragment() {
+        // Required empty public constructor
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_insert, container, false);
+
+        // Obtener views
+        descripcion = (EditText) view.findViewById(R.id.descripcion_input);
+        nombre = (EditText) view.findViewById(R.id.nombre_input);
+        valoracion = (Spinner) view.findViewById(R.id.valoracion_spinner);
+        categoria = (Spinner) view.findViewById(R.id.categoria_spinner);
+
+        return view;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case android.R.id.home:
+                saveData(); // Guardar datos
+                getActivity().finish();
+                return true;
+            case R.id.action_discard:
+                getActivity().finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void saveData() {
+        // Obtención de valores actuales
+        ContentValues values = new ContentValues();
+        values.put(ContratoProvider.Columnas.VALORACION, valoracion.getSelectedItem().toString());
+        values.put(ContratoProvider.Columnas.CATEGORIA, categoria.getSelectedItem().toString());
+        values.put(ContratoProvider.Columnas.NOMBRE, nombre.getText().toString());
+        values.put(ContratoProvider.Columnas.DESCRIPCION, descripcion.getText().toString());
+
+        getActivity().getContentResolver().insert(
+                ContratoProvider.CONTENT_URI,
+                values
+        );
+    }
+}

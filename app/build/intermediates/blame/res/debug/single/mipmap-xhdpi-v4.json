@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_add.png",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_delete.png",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_edit.png",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_edit.png"
+    },
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_done.png",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_done.png"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\update.xml",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\menu\\update.xml"
+    },
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\insert.xml",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\menu\\insert.xml"
+    },
+    {
+        "merged": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\detail.xml",
+        "source": "C:\\ANDROID\\workspaceAndroid\\1_My Proyecto2 ultimo\\app\\src\\main\\res\\menu\\detail.xml"
+    }
+]

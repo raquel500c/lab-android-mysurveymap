@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Proyecto2 mapa</string>
+
+
+    <!-- Etiquetas -->
+    <string name="valoracion_label">Valoración</string>
+    <string name="descripcion_label">Descripción</string>
+    <string name="nombre_label">Nombre</string>
+    <string name="categoria_label">Categoría</string>
+
+    <!-- Hint -->
+    <string name="descripcion_input">Descripción</string>
+    <string name="nombre_input">Nombre Lugar</string>
+
+
+    <!-- Arrays para spinners -->
+    <string-array name="categoria">
+        <item>Restaurante</item>
+        <item>Copas</item>
+        <item>Naturaleza</item>
+        <item>Educación</item>
+    </string-array>
+
+    <string-array name="valoracion">
+        <item>Buena</item>
+        <item>Mala</item>
+        <item>Regular</item>
+    </string-array>
+
+    <!-- Titulos de actividades -->
+    <string name="title_activity_insert">Insertar nuevo registro</string>
+    <string name="title_activity_update">Editar Lugar</string>
+    <string name="title_activity_detail">Detalle</string>
+
+    <!-- Action Buttons -->
+    <string name="action_delete">Borrar</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_discard">Descartar Cambios</string>
+</resources>
